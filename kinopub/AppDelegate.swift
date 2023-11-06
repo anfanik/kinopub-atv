@@ -96,7 +96,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, TVApplicationControllerDe
     // MARK: TVApplicationControllerDelegate
 
     func appController(_ appController: TVApplicationController, evaluateAppJavaScriptIn jsContext: JSContext){
-        let defaults = UserDefaults(suiteName: "group.com.wielski.kinopub")
+        let defaults = UserDefaults(suiteName: "group.me.anfanik.kinopub")
         
         let setData : @convention(block) (String, String) -> Void = {
             (key, value) -> Void in

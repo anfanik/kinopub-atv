@@ -18,7 +18,7 @@ class ServiceProvider: NSObject, TVTopShelfProvider {
         var SectionsItems = [TVContentItem]();
 
         do {
-            if let userDefaults = UserDefaults(suiteName: "group.com.wielski.kinopub"),
+            if let userDefaults = UserDefaults(suiteName: "group.me.anfanik.kinopub"),
                 let topShelfString = userDefaults.string(forKey: "topshelf_url"),
                 let topShelfData = topShelfString.data(using: String.Encoding.utf8, allowLossyConversion: false),
                 let topShelf = try JSONSerialization.jsonObject(with: topShelfData) as? [String: Any] {
